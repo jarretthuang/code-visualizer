@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Oswald } from "next/font/google";
+import { Play } from "next/font/google";
 import "./globals.css";
 
-const inter = Oswald({ subsets: ["latin"] });
+const font = Play({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Code Visualizer",
@@ -39,7 +42,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
