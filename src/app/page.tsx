@@ -14,7 +14,9 @@ export default function Home() {
         />
         <div className="px-2 text-3xl font-bold">Code Visualizer</div>
       </div>
-      <Canvas />
+      <div className="w-full flex-1 rounded-lg border-2 p-2 shadow">
+        <Canvas />
+      </div>
     </main>
   );
 }
